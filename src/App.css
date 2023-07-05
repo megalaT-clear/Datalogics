@@ -2,37 +2,256 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.navBar,
+.nav,
+.navLeft,
+.navCenter,
+.navRight {
+  display: flex;
+  align-items: center;
+  background-color: rgb(59 126 59);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navBar {
+  justify-content: space-between;
+  padding-left: 75px;
+}
+
+.nav {
+  justify-content: space-between;
+  flex: 0.55;
+}
+
+.navLeft {
+  color: #ffffff;
+  flex: 0.35;
+  justify-content: space-between;
+
+  .logo {
+    border-radius: 50%;
+    height: 46px;
+  }
+
+  .heading {
+    font-style: italic;
+    font-size: 37px;
+    font-weight: 600;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navCenter {
+  flex: 0.53;
+  color: rgb(211 210 210);
+  justify-content: space-between;
+}
+
+.navCenters {
+  font-size: 14px;
+}
+
+
+.navRight {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.intro {
+  color: white;
+  background-color: rgb(59 126 59);
+}
+
+.intro>div {
+  font-size: x-large;
+  text-align: start;
+  font-weight: 200;
+  padding-left: 75px;
+}
+
+.introHeading {
+  text-align: start;
+  font-size: xxx-large;
+  padding-left: 75px;
+}
+
+.handImg {
+  height: 70px;
+  border-radius: 50%;
+}
+
+.white {
+  display: flex;
+  height: 49%;
+  width: 89%;
+  border-radius: 74% 74% 0% 0%;
+  background-color: white;
+  padding: 2%;
+  overflow: hidden;
+}
+
+.lifeCycle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .lifeCycleImg {
+    width: 37%;
+  }
+
+  .lifeCycleInfo {
+    text-align: start;
+  }
+}
+
+.Appleservice {
+  display: flex;
+  height: auto;
+  padding-left: 75px;
+}
+
+.Appleservice>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service {
   display: flex;
   flex-direction: column;
+  height: 350px;
+  width: 550px;
+  margin-top: 50px;
+  line-height: 30px;
+  border-radius: 10px;
+  box-shadow: 11px 17px 16px 2px rgba(0, 0, 0, .25);
+}
+
+.service:hover {
+  background-color: green;
+}
+
+.service>div {
+  font-size: larger;
+}
+
+.partnersImg {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.partnersImg>img {
+  height: 130px;
+  padding-left: 35px;
+}
+
+.care {
+  font-size: xxx-large;
+  padding-left: 12px;
+}
+
+
+.serviceCenters {}
+
+.serviceCenter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1500px;
+  padding-left: 75px;
+}
+
+.serviceCenterBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 350px;
+  width: 550px;
+  box-shadow: 11px 17px 16px 2px rgba(0, 0, 0, .25);
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.serviceCenterBox:hover{
+  background-color: green;
+}
+
+
+.serviceCenterHeader {
+  display: flex;
+  align-items: center;
+}
+
+.serviceCenterHeader>img {
+  height: 80px;
+}
+
+.serviceCenterBody {
+  text-align: start;
+}
+
+.serviceCenterFooters {
+  color: #bb2d2d
+}
+
+.aboutFooter{
+  display: flex;
+  padding: 100px;
+}
+.aboutFooter>img{
+  height: 550px;
+  border-radius: 20px 0 0px 20px;
+}
+
+.footer{
+  background-color: rgb(228, 31, 31);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 80px;
+
+}
+
+.footerBox{
+  padding-left: 25px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footerBox>p{
+  text-align: start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.footerBox>div{
+  text-align: start;
+  line-height: 35px;
+}
+
+.inputs{
+padding: 30px;
+width: 45%;
+}
+.inputs>div{
+  padding: 5px;
+}
+
+.input{
+  width: 95%;
+  height: 15%;
+}
+
+.inputEmail{
+  width: 46%;
+  height: 15%;
+}
+
+.inputMbl{
+  width: 46%;
+  height: 15%;
+}
+
+@media only screen and (max-width: 810px) {
+  .aboutFooter{
+    flex-direction: column;
   }
 }

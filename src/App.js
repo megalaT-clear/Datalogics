@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import About from './components/About';
+import Appleservice from './components/Appleservice';
+import CopyRight from './components/CopyRight';
+import Footer from './components/Footer';
+import Intro from './components/Intro';
+import Lifecycle from './components/Lifecycle';
+import Navbar from './components/Navbar';
+import Partners from './components/Partners';
+import Service from './components/Service';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Navbar/>
+     <Intro/>
+     <Lifecycle/>
+     <div style={{
+        padding: '75px',
+     }}>The Ultimate Apple Service</div>
+     <Partners/>
+     <Service/>
+     <About/>
+     <Footer/>
+     <CopyRight/>
     </div>
   );
 }
